@@ -1,0 +1,296 @@
+{
+  "Deed": {
+    "Deed Buyer/Borrower 1 FirstNm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Buyer/Borrower 1 LastNm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Buyer/Borrower 1 Relationship Type": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Buyer/Borrower Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed BBuyer/Borrower Zip + 4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Buyer/Borrower City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Buyer/Borrower State": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Buyer/Borrower Street Address": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Sale Date": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Sale Price": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Company Name": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed AttorneyName": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Lender FirstNm or Company Nm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Lender LastNm or Company Cd": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Lender Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Lender Zip + 4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Lender City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Lender State": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Property Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Property Zip +4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Property City/Tax City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Amortization Term(CCYY)": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Loan Due Date(MMDD)": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Deed Interest Rate": {
+      "value": "",
+      "confidenceScore": 0
+    }
+  },
+  "Mortgage": {
+    "Tmg Buyer/Borrower 1 FirstNm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Buyer/Borrower 1 LastNm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Buyer/Borrower 1 Relationship Type": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Buyer/Borrower Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg BBuyer/Borrower Zip + 4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Buyer/Borrower City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Buyer/Borrower State": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Buyer/Borrower Street Address": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Sale Date": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Sale Price": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Company Name": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg AttorneyName": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Lender FirstNm or Company Nm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Lender LastNm or Company Cd": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Lender Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Lender Zip + 4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Lender City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Lender State": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Property Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Property Zip +4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Property City/Tax City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Amortization Term(CCYY)": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Loan Due Date(MMDD)": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "Tmg Interest Rate": {
+      "value": "",
+      "confidenceScore": 0
+    }
+  },
+  "DeedOfTrust": {
+    "DOT Buyer/Borrower 1 FirstNm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Buyer/Borrower 1 LastNm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Buyer/Borrower 1 Relationship Type": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Buyer/Borrower Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT BBuyer/Borrower Zip + 4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Buyer/Borrower City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Buyer/Borrower State": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Buyer/Borrower Street Address": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Sale Date": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Sale Price": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Company Name": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT AttorneyName": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Lender FirstNm or Company Nm": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Lender LastNm or Company Cd": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Lender Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Lender Zip + 4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Lender City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Lender State": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Property Zip Code": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Property Zip +4": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Property City/Tax City": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Amortization Term(CCYY)": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Loan Due Date(MMDD)": {
+      "value": "",
+      "confidenceScore": 0
+    },
+    "DOT Interest Rate": {
+      "value": "",
+      "confidenceScore": 0
+    }
+  }
+}
