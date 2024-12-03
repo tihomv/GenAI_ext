@@ -46,32 +46,43 @@ def uploadFile(request):
     processed = False
     if request.method == "POST" and request.FILES["file"]:
         uploaded_file = request.FILES["file"]
-        ocr_content = extract_pdf_text(uploaded_file.read())
-        print("vinay---filename---", uploaded_file.name)
-        start_time = time.time()
-        response = upload_and_process_file(uploaded_file)
-        elapsed_time = time.time() - start_time
-        # print(type(elapsed_time))
-        # print(elapsed_time)
-        # print(response)
-        # print(type(response))
-        print("upload done")
-        processed = True
-        try:
-            with open(dymanic_path("document_extr/data/json", f"{uploaded_file.name.split('.')[0]}.json"), "w") as f:
-                json.dump(response, f, indent=4)
-            print(f"Dictionary saved to {f}")
-        except IOError as e:
-            print(f"Error saving dictionary to JSON: {e}")
-        return render(
-            request,
-            "index.html",
-            {
-                "username": username,
-                "processed": processed,
-                "file_name": uploaded_file.name,
-            },
-        )
+        if uploaded_file.name.endswith(".pdf"):
+            ocr_content = extract_pdf_text(uploaded_file.read())
+            print("vinay---filename---", uploaded_file.name)
+            start_time = time.time()
+            response = upload_and_process_file(uploaded_file)
+            elapsed_time = time.time() - start_time
+            # print(type(elapsed_time))
+            print(elapsed_time)
+            # print(response)
+            # print(type(response))
+            print("upload done")
+            processed = True
+            try:
+                with open(dymanic_path("document_extr/data/json", f"{uploaded_file.name.split('.')[0]}.json"), "w") as f:
+                    json.dump(response, f, indent=4)
+                print(f"Dictionary saved to {f}")
+            except IOError as e:
+                print(f"Error saving dictionary to JSON: {e}")
+            return render(
+                request,
+                "index.html",
+                {
+                    "username": username,
+                    "processed": processed,
+                    "file_name": uploaded_file.name,
+                },
+            )
+        else:
+            image_data = input_image_setup(uploaded_file)
+            img = Image.open(uploaded_file)
+            img.save(
+                dymanic_path("static", "images", f"_{1}.jpeg"), "JPEG", quality=100
+            )
+            ocr_content = None
+            processed = True
+            response = get_gemini_response(image_data=image_data, ocr_content=ocr_content)
+            print(response)
     return render(
         request,
         "index.html",

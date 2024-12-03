@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 
 # Initialize GCP storage client
 bucket_name = os.getenv("GCP_BUCKET_NAME")
-
+print(bucket_name)
 # Initialize LLM
 llm = get_llm()
 
@@ -83,7 +83,7 @@ def process_file(filename):
 def upload_and_process_file(file):
     try:
         start_time = time.time()
-        filename = upload_file(file)
+        # filename = upload_file(file)
         elapsed_time = time.time() - start_time
         logger.info(f"upload_file: {elapsed_time}")
 

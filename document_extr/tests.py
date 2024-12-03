@@ -78,7 +78,7 @@ def get_gemini_response(image_data=None, ocr_content=None):
                 This detailed extraction, complete with confidence scores, aids in ensuring the precision and reliability of the data extracted from the mortgage documents.
                 """
 
-    model_name = "gemini-pro-vision" if image_data else "gemini-pro"
+    model_name = "gemini-1.5-flash" if image_data else "gemini-1.5-flash"
     model = genai.GenerativeModel(model_name)
 
     content = image_data if image_data else {"text": ocr_content}

@@ -1,14 +1,12 @@
 _type: prompt
 input_variables:
-  ['file_content']
+  - file_content
+  - Document_type
 template:
     You are an expert in analyzing US mortgage documents like Deed, Deed of Trust, Mortgage, Satisfaction of Mortgage, and Release.
     Upon receiving an input, which can be either an image or text of one of these documents, you are to:-
     Classify the document type and provide a confidence score for the classification.
-    1. Deed
-    2. Mortgage
-    3. DeedOfTrust
-    4. N\A
+    {Document_type}
 
     Respond with only the classification name (Deed, Mortgage, or DeedOfTrust).
 

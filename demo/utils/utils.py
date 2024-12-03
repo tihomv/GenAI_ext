@@ -16,9 +16,20 @@ load_dotenv(find_dotenv(), override=True)
 logger = logging.getLogger(__name__)
 
 
+def get_Documenttype():
+    return """1. Deed
+    2. Mortgage
+    3. DeedOfTrust
+    4. N\A"""
+
+
+
 def classify_document(llm, file_content: str, file_name: str) -> str:
     prompt = load_prompt(r"demo/prompts/classification.yaml")
-    prompt = prompt.invoke({"file_content": file_content})
+    Document_type = get_Documenttype()
+    prompt = prompt.invoke({"file_content": file_content, "Document_type": Document_type})
+    print("KKKKKKKKKKKKK")
+    print(prompt)
     try:
         response = llm.invoke(prompt)
         classification = response.strip()

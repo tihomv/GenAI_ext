@@ -14,6 +14,7 @@ load_dotenv(find_dotenv(), override=True)
 
 logger = logging.getLogger(__name__)
 
+# def get_llm(model: str = "gemini-1.5-pro"):
 def get_llm(model: str = "gemini-1.5-flash"):
     return genai.GoogleGenerativeAI(model=model)
 
