@@ -1,7 +1,0 @@
-Django
-PyMuPDF
-Pillow
-protobuf
-python-dotenv
-PyPDF2
-google-generativeai

@@ -1,7 +1,0 @@
-Total time = 19.05 (Total time of processing the document)
-upload file = 0.88 (Uploading the file to google cloud)
-file content = 0.93 (Reading the file content)
-doc classification = 2.61 (Document classification using LLM)
-get pydantic parser = 0.0036 (getting the list of field to be extracted and selecting the prompt for the llm)
-Processing file with parser = 14.09 (LLM extracting the required field)
-Stored parsed information = 0.52 (Saving the LLM output as Json)

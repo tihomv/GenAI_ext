@@ -25,7 +25,7 @@ def get_Documenttype():
 
 
 def classify_document(llm, file_content: str, file_name: str) -> str:
-    prompt = load_prompt(r"demo/prompts/classification.yaml")
+    prompt = load_prompt(r"GenAI/prompts/classification.yaml")
     Document_type = get_Documenttype()
     prompt = prompt.invoke({"file_content": file_content, "Document_type": Document_type})
     print("KKKKKKKKKKKKK")

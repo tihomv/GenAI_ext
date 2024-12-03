@@ -5,14 +5,14 @@ from dotenv import load_dotenv, find_dotenv
 from google.cloud import storage
 import os
 from datetime import datetime
-from demo.llm_integration.google_client import get_llm
-from demo.utils.utils import classify_document
-from demo.utils.parsers import get_pydantic_parser, DocumentType
+from GenAI.llm_integration.google_client import get_llm
+from GenAI.utils.utils import classify_document
+from GenAI.utils.parsers import get_pydantic_parser, DocumentType
 import logging
 from pydantic import ValidationError
 import json
 from langchain_core.prompts import load_prompt
-from demo.utils.document_loader import upload_file, read_file_content, write_json_output
+from GenAI.utils.document_loader import upload_file, read_file_content, write_json_output
 
 import time
 
@@ -149,7 +149,7 @@ def process_file_with_parser(file_content: str, filename: str, parser, llm, doc_
         prompt = load_prompt(prompt_file)
     except FileNotFoundError:
         logger.warning(f"Specific prompt file not found for {doc_classification}. Using base prompt.")
-        prompt = load_prompt(r"demo/prompts/base.yaml")
+        prompt = load_prompt(r"GenAI/prompts/base.yaml")
 
     # Prepare the prompt with file content and parser instructions
     formatted_prompt = prompt.format(

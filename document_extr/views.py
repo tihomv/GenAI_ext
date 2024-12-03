@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from demo.server import upload_and_process_file, process_file
+from GenAI.server import upload_and_process_file, process_file
 from .models import User
 from django.http import JsonResponse, HttpResponse
 from .tests import (
@@ -52,10 +52,7 @@ def uploadFile(request):
             start_time = time.time()
             response = upload_and_process_file(uploaded_file)
             elapsed_time = time.time() - start_time
-            # print(type(elapsed_time))
             print(elapsed_time)
-            # print(response)
-            # print(type(response))
             print("upload done")
             processed = True
             try:
